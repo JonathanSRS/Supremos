@@ -1,9 +1,13 @@
 const express = require('express'),
-    maquinas = require('./RouterMaquinas')
+    maquinas = require('./RouterMaquinas'),
+    usuarios = require('./RouterUsuarios'),
+    empresas = require('./RouterEmpresa')
 
 
     module.exports = app =>{
     app.use(express.json(),
-        maquinas
+        maquinas,
+        usuarios,
+        empresas,
     )
 }

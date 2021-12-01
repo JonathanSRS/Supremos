@@ -1,7 +1,7 @@
 const database = require('../models/ModelMaquinas')
 
 class MaquinaController{
-    constructor({imagens, nome, modelo, descricao, proprietario, status, nivel_saude, createdAt}){
+    constructor({imagens, nome, modelo, descricao, proprietario, status, nivel_saude, dataCriacao}){
         this.imagens = imagens;
         this.nome = nome;
         this.modelo = modelo;
@@ -20,7 +20,7 @@ class MaquinaController{
             status: this.status,
             nivel_saude: this.nivel_saude
         })
-        this.createdAt = teste.createdAt
+        this.dataCriacao = teste.dataCriacao
     }
 }
 
