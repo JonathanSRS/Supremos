@@ -35,6 +35,19 @@ router.get('/usuarios/empresa/:id', async(req, res)=>{
     }
 })
 
+router.put('/usuarios/empresa/atualizar/:id', async(req, res) =>{
+    try{
+        const empresa = await Empresa.updateOne({'_id': req.params.id},
+            {$set:
+                    req.body
+                }
+            );
+        res.status(200).json(empresa);    
+    }catch(error){
+        res.status(400).json(error.message)
+    }
+})
+
 router.delete('/usuarios/empresa/:id', async(req, res)=>{
     const id = req.params.id
     try{
