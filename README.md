@@ -1,4 +1,10 @@
-Projeto em andamento ....
+Status do Projeto 
+
+- [ ] em andamento ....
+
+- [ ] Concluído
+
+- [x] Parado 
 
 Tarefas:
 
