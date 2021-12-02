@@ -2,7 +2,10 @@ Projeto em andamento ....
 
 Tarefas:
 
-- [ ] Relacionamento 
-
+- [ ] Atualizar models
+- [ ] Autenticação
 - [ ] Tratamento de Erros
+- [ ] Refatoração de Código
+- [ ] Atlas
+- [ ] Heroku
 
